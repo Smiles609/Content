@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoova Content Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Yoova Content Generator</h1>
+
+        <div class="tab-container">
+            <button class="tab-button active" data-tab="youtube">YouTube</button>
+            <button class="tab-button" data-tab="x">X (Twitter)</button>
+            <button class="tab-button" data-tab="instagram">Instagram</button>
+            <button class="tab-button" data-tab="email">Email</button>
+        </div>
+        
+        <section id="youtube" class="tab-content active">
+            <h2>YouTube Tools</h2>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="youtubeTopic">Topic:</label>
+                    <input type="text" id="youtubeTopic" placeholder="Enter topic">
+                </div>
+                <div class="form-group">
+                    <label for="youtubeStyle">Style:</label>
+                    <input type="text" type="text" id="youtubeStyle" placeholder="Enter style (optional)">
+                </div>
+                <div class="form-group">
+                    <label for="youtubeKeywords">Keywords:</label>
+                    <input type="text" type="text" id="youtubeKeywords" placeholder="Enter keywords (optional)">
+                </div>
+                <div class="form-group">
+                    <button id="generateScript">Generate Script</button>
+                    <button id="suggestChannelName">Suggest Channel Name</button>
+                    <button id="suggestNiche">Suggest Niche</button>
+                    <button id="generateVideoIdeas">Generate Video Ideas</button>
+                    <button id="generatePostContent">Generate Post Content</button>
+                </div>
+                <div class="output-container" id="youtubeOutput"></div>
+            </div>
+        </section>
+
+        <section id="x" class="tab-content">
+             <h2>X (Twitter) Tools</h2>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="xTopic">Topic:</label>
+                    <input type="text" type="text" id="xTopic" placeholder="Enter topic">
+                </div>
+                <div class="form-group">
+                    <label for="xStyle">Style:</label>
+                    <input type="text" type="text" id="xStyle" placeholder="Enter style (optional)">
+                </div>
+                 <div class="form-group">
+                    <label for="xKeywords">Keywords:</label>
+                    <input type="text" type="text" id="xKeywords" placeholder="Enter keywords (optional)">
+                </div>
+                <div class="form-group">
+                    <button id="generateTweet">Generate Tweet</button>
+                </div>
+                 <div class="output-container" id="xOutput"></div>
+            </div>
+        </section>
+        
+        <section id="instagram" class="tab-content">
+              <h2>Instagram Tools</h2>
+            <div class="form-container">
+                <div class="form-group">
+                     <label for="instagramTopic">Topic:</label>
+                     <input type="text" type="text" id="instagramTopic" placeholder="Enter topic">
+                </div>
+                <div class="form-group">
+                     <label for="instagramStyle">Style:</label>
+                     <input type="text" type="text" id="instagramStyle" placeholder="Enter style (optional)">
+                </div>
+                <div class="form-group">
+                    <label for="instagramKeywords">Keywords:</label>
+                    <input type="text" type="text" id="instagramKeywords" placeholder="Enter keywords (optional)">
+                </div>
+                <div class="form-group">
+                    <button id="generateInstagramPost">Generate Post</button>
+                    <button id="generateInstagramStory">Generate Story</button>
+                    <button id="suggestInstagramChannelName">Suggest Channel Name</button>
+                    <button id="generateInstagramVideoIdeas">Generate Video Ideas</button>
+                     <button id="suggestInstagramNiche">Suggest Niche</button>
+                    <button id="generateInstagramReelIdeas">Generate Reel Ideas</button>
+                     <button id="generateInstagramVideoScript">Generate Video Script</button>
+                </div>
+                <div class="output-container" id="instagramOutput"></div>
+            </div>
+        </section>
+
+         <section id="email" class="tab-content">
+            <h2>Email Tools</h2>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="emailTopic">Topic:</label>
+                    <input type="text" type="text" id="emailTopic" placeholder="Enter topic">
+                </div>
+                <div class="form-group">
+                    <label for="emailStyle">Style:</label>
+                    <input type="text" type="text" id="emailStyle" placeholder="Enter style (optional)">
+                 </div>
+                <div class="form-group">
+                    <label for="emailKeywords">Keywords:</label>
+                    <input type="text" type="text" id="emailKeywords" placeholder="Enter keywords (optional)">
+                </div>
+                <div class="form-group">
+                    <button id="generateEmail">Generate Email</button>
+                </div>
+                <div class="output-container" id="emailOutput"></div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+            <p>© 2024 Yoova Content Generator</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
